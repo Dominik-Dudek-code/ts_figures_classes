@@ -17,7 +17,9 @@ export class Triangle implements Figure {
     public c: number,
   ) {
     if (a <= 0 || b <= 0 || c <= 0) {
-      throw new Error('Values must be positive numbers, greater than zero');
+      throw new Error(
+        'Side lengths must be positive numbers greater than zero!',
+      );
     }
 
     if (a + b <= c || a + c <= b || b + c <= a) {
@@ -41,7 +43,7 @@ export class Circle implements Figure {
     public radius: number,
   ) {
     if (radius <= 0) {
-      throw new Error('Values must be positive numbers, greater than zero');
+      throw new Error('Radius must be positive number, greater than zero');
     }
   }
 
@@ -61,7 +63,9 @@ export class Rectangle implements Figure {
     public height: number,
   ) {
     if (height <= 0 || width <= 0) {
-      throw new Error('Values must be positive numbers, greater than zero');
+      throw new Error(
+        'Width and height must be positive numbers, greater than zero',
+      );
     }
   }
 
