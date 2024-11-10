@@ -18,7 +18,7 @@ export class Triangle implements Figure {
   ) {
     if (a <= 0 || b <= 0 || c <= 0) {
       throw new Error(
-        'Side lengths must be positive numbers greater than zero!',
+        'Side lengths must be positive numbers, greater than zero!',
       );
     }
 
